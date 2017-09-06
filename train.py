@@ -18,7 +18,7 @@ def main():
         description='Train CycleGAN')
     parser.add_argument('--batch_size', '-b', type=int, default=1)
     parser.add_argument('--max_iter', '-m', type=int, default=120000)
-    parser.add_argument('--gpu', '-g', type=int, default=0,
+    parser.add_argument('--gpu', '-g', type=int, default=-1,
                         help='GPU ID (negative value indicates CPU)')
     parser.add_argument('--out', '-o', default='result',
                         help='Directory to output the result')
